@@ -1,0 +1,10 @@
+// 47ss
+{
+ "extends": "../../tsconfig.base.json",
+ "compilerOptions": {
+  "removeComments": true
+ },
+ "include": [
+  "./**/*", //2ms01ss
+ ]
+}
