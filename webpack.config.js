@@ -1,10 +1,8 @@
-//01ss
 module.exports = {
-	entry: './fileSrc/app/app.ts', //xx1
+	entry: './fileSrc/app/app.ts',
 	devtool: 'inline-source-map',
 	mode: 'development',
 	module: {
-		//
 		rules: [
 			{
 				test: /\.tsx?$/,
