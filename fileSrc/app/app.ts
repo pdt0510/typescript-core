@@ -1,16 +1,17 @@
-//6ms04ss
-/// <reference path="player.ts" />
-/// <reference path="game.ts" />
+//2ms24ss
+import { Game } from './game';
+import { Player } from './player';
+import * as helpers from './utility';
 
 let newGame: Game;
 
 // add click handler to the start game button
 document.getElementById('startGame')!.addEventListener('click', () => {
 	const player: Player = new Player();
-	player.name = Utility.getInputValue('playername');
+	player.name = helpers.getInputValue('playername');
 
-	const problemCount: number = Number(Utility.getInputValue('problemCount'));
-	const factor: number = Number(Utility.getInputValue('factor'));
+	const problemCount: number = Number(helpers.getInputValue('problemCount'));
+	const factor: number = Number(helpers.getInputValue('factor'));
 
 	newGame = new Game(player, problemCount, factor);
 	newGame.displayGame();

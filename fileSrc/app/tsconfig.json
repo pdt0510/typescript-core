@@ -2,7 +2,21 @@
  "extends": "../../tsconfig.base.json",
  "compilerOptions": {
   "removeComments": true,
-  "outFile": "../js/app.js"
+  // "outFile": "../js/app.js" //03ss
+  "module": "CommonJS",
+  "moduleResolution": "Node", //11ss
+  "traceResolution": true, //30ss
+  // "baseUrl": "./modules", //3ms42ss, 7ms04ss
+  // "paths": {
+  //  "my_lib_tai": [
+  //   "./customPath" //5ms50ss, 
+  //  ]
+  // },
+  // "rootDirs": [
+  //  "module",
+  //  "src",
+  //  "ts/module" //5ms50ss
+  // ],
  },
  "files": [
   "./app.ts"

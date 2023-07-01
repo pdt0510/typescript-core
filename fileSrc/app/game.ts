@@ -1,22 +1,10 @@
-/// <reference path="utility.ts" />
-/// <reference path="result.ts" />
-/// <reference path="player.ts" />
-/// <reference path="scoreboard.ts" />
+//2ms24ss
+import { Scoreboard } from './scoreboard';
+import { Result } from './result';
+import { Player } from './player';
+import * as Utility from './utility';
 
-// 2msm19ss
-class Game {
-	// private scoreboard: Scoreboard = new Scoreboard();
-	// public player: Player;
-	// public problemCount: number;
-	// public factor: number;
-
-	// constructor(newPlayer: Player, numOfProblem: number, multiFactor: number) {
-	// 	this.player = newPlayer;
-	// 	this.problemCount = numOfProblem;
-	// 	this.factor = multiFactor;
-	// }
-
-	/* 3ms05ss */
+export class Game {
 	private scoreboard: Scoreboard = new Scoreboard();
 	constructor(public player: Player, public problemCount: number, public factor: number) {
 		this.player = player;
@@ -25,7 +13,6 @@ class Game {
 	}
 
 	displayGame(): void {
-		// create the html for the current game
 		let gameForm: string = '';
 		for (let i = 1; i <= this.problemCount; i++) {
 			gameForm += '<div class="form-group">';
@@ -38,18 +25,15 @@ class Game {
 			gameForm += '</div>';
 		}
 
-		// add the new game to the page
 		const gameElement: HTMLElement = document.getElementById('game')!;
 		gameElement.innerHTML = gameForm;
 
-		// enable the calculate score button
 		document.getElementById('calculate')!.removeAttribute('disabled');
 	}
 
 	calculateScore(): void {
 		let score: number = 0;
 
-		// loop through the text boxes and calculate the number that are correct
 		for (let i = 1; i <= this.problemCount; i++) {
 			const answer: number = Number(Utility.getInputValue('answer' + i));
 			if (i * this.factor === answer) {
@@ -57,7 +41,6 @@ class Game {
 			}
 		}
 
-		// create a new result object to pass to the scoreboard
 		const result: Result = {
 			playerName: this.player.name,
 			score: score,
@@ -65,11 +48,9 @@ class Game {
 			factor: this.factor,
 		};
 
-		// add the result and update the scoreboard
 		this.scoreboard.addResult(result);
 		this.scoreboard.updateScoreboard();
 
-		// disable the calculate score button
 		document.getElementById('calculate')!.setAttribute('disabled', 'true');
 	}
 }

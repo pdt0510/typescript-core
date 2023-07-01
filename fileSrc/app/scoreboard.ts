@@ -1,20 +1,11 @@
-/// <reference path="result.ts" />
+import { Result } from './result'; //2ms24ss
 
-class Scoreboard {
-	private results: Result[] = []; //1m20ss
+export class Scoreboard {
+	private results: Result[] = [];
 
 	addResult(newResult: Result): void {
 		this.results.push(newResult);
-		console.log('addResult ---', this);
-		console.log('addResult ---', this.results);
 	}
-
-	//1m20ss
-	addResult2 = (newResult: Result): void => {
-		this.results.push(newResult);
-		console.log('addResult2 ---', this);
-		console.log('addResult2 ---', this.results);
-	};
 
 	updateScoreboard(): void {
 		let output: string = '<h2>Scoreboard</h2>';
