@@ -12,7 +12,6 @@ class Main {
 	currentAccount: BankAccount;
 	atm: ATM;
 
-	// 32ss
 	constructor(private renderer: Renderer) {}
 
 	async loadAccounts() {
@@ -20,7 +19,7 @@ class Main {
 		const data = await response.json();
 		this.checkingAccount = new CheckingAccount({ ...data.checkingAccount });
 		this.savingsAccount = new SavingsAccount({ ...data.savingsAccount });
-		this.atm = new ATM(this.checkingAccount);
+		this.atm = new ATM(this.checkingAccount); //1m39ss
 
 		let html = this.renderAccounts();
 		this.renderer.render(`
@@ -74,6 +73,7 @@ class Main {
 		return acctsHtml;
 	}
 
+	// 1m39ss
 	renderAccount(account: BankAccount) {
 		const accountType = AccountType[account.accountType];
 		const html = `
@@ -120,7 +120,7 @@ class Main {
 	}
 }
 
-// Create main object and add handlers for it, 09ss
+// Create main object and add handlers for it
 const renderer = new Renderer(document.querySelector('#viewTemplate'));
 const main = new Main(renderer);
 main.loadAccounts();

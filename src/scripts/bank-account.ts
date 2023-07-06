@@ -1,30 +1,33 @@
 import { AccountType } from './enums';
+import { Account, AccountSettings, AccountInfo } from './interfaces';
+import { Constants } from './constants';
 
-// 2ms50ss
-export abstract class BankAccount {
+export abstract class BankAccount implements Account {
+	abstract accountType: AccountType;
 	private _balance = 0;
 	id: number;
 	title: string;
-	abstract accountType: AccountType; //3ms49ss
 
-	constructor(accountSettings: any) {
+	constructor(accountSettings: AccountSettings) {
 		this.id = accountSettings.id;
 		this.title = accountSettings.title;
 		this.balance = accountSettings.balance;
 	}
 
-	// 7ms44ss
 	deposit(amount: number) {
-		console.log('BankAccount deposit ---');
 		this.balance += amount;
 	}
 
-	// 7ms44ss
 	withdrawal(amount: number) {
 		this.balance -= amount;
 	}
 
-	abstract getAccountInfo(): any; //4ms38ss
+	getAccountInfo(): AccountInfo<string, number> {
+		return {
+			routingNumber: Constants.ROUTING_NUMBER,
+			bankNumber: Constants.BANK_NUMBER,
+		};
+	}
 
 	get balance() {
 		return this._balance;
