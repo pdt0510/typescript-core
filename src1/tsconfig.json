@@ -1,8 +1,12 @@
+// 32ss
 {
-  "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "esModuleInterop": true,
-    "removeComments": true
-  }
+ "compilerOptions": {
+  "target": "es6",
+  "experimentalDecorators": true,
+  "emitDecoratorMetadata": true,
+  "module": "commonjs",
+  "esModuleInterop": true,
+  "outDir": "out",
+  "sourceMap": true
+ }
 }
