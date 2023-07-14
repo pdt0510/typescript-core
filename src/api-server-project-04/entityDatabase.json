@@ -1,0 +1,22 @@
+{
+    "people": {
+        "d51d6600-7298-44c4-aeaa-4ebef644de49": {
+            "id": "d51d6600-7298-44c4-aeaa-4ebef644de49",
+            "firstName": "David",
+            "lastName": "Tucker",
+            "email": "PDT123@gmail.com",
+            "department": "IT",
+            "mobileNumber": "+123123",
+            "age": 38
+        },
+        "5ac6cc04-3e43-436b-94ef-f5aacdb1f07e": {
+            "firstName": "Duck - Validator",
+            "lastName": "Tucker",
+            "email": "PDT123@gmail.com",
+            "department": "IT",
+            "mobileNumber": "123123",
+            "age": 51
+        }
+    },
+    "users": {}
+}
