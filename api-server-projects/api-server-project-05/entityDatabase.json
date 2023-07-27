@@ -1,0 +1,83 @@
+{
+    "people": {
+        "69264960-aeb7-4b66-a3ee-ca6cdf78f042": {
+            "id": "69264960-aeb7-4b66-a3ee-ca6cdf78f042",
+            "firstName": "David",
+            "lastName": "Tucker",
+            "email": "david@globomantics.com",
+            "department": "IT",
+            "mobileNumber": "223344",
+            "age": 77
+        },
+        "42491edc-0e3d-474b-a19b-9e510b693da9": {
+            "id": "42491edc-0e3d-474b-a19b-9e510b693da9",
+            "firstName": "David",
+            "lastName": "Tucker",
+            "email": "david@globomantics.com",
+            "department": "IT",
+            "mobileNumber": "+15555555",
+            "age": 38
+        },
+        "ffbd20a8-fddc-4c4c-8a94-c831f9c17b1d": {
+            "firstName": "Duck - Validator",
+            "lastName": "Tucker",
+            "email": "PDT123@gmail.com",
+            "department": "IT",
+            "mobileNumber": "65583732",
+            "age": 22
+        },
+        "cfce423a-b84a-4846-b29a-c2863ff0a57f": {
+            "firstName": "Duck - Validator",
+            "lastName": "Tucker",
+            "email": "PDT123@gmail.com",
+            "department": "IT",
+            "mobileNumber": "65583732",
+            "age": 22
+        },
+        "6066628a-0816-40b9-8e84-608bf5d64760": {
+            "firstName": "Duck - Auth lesson",
+            "lastName": "Tucker",
+            "email": "PDT123@gmail.com",
+            "department": "IT",
+            "mobileNumber": "65583732",
+            "age": 22
+        },
+        "24ae536b-8bcd-4866-8185-1fe187e60474": {
+            "firstName": "Duck - Auth lesson",
+            "lastName": "Tucker",
+            "email": "PDT123@gmail.com",
+            "department": "IT",
+            "mobileNumber": "65583732",
+            "age": 22
+        }
+    },
+    "users": {
+        "david": {
+            "password": "mypassword",
+            "permissions": {
+                "people": [
+                    "reader",
+                    "writer"
+                ]
+            }
+        },
+        "jessi": {
+            "password": "mypassword",
+            "permissions": {
+                "people": [
+                    "reader"
+                ]
+            }
+        },
+        "dallin": {
+            "password": "mypassword",
+            "permissions": {
+                "people": [
+                    "reader",
+                    "writer",
+                    "deleter"
+                ]
+            }
+        }
+    }
+}

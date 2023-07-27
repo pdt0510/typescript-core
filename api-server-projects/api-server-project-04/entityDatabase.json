@@ -1,0 +1,54 @@
+{
+    "people": {
+        "d51d6600-7298-44c4-aeaa-4ebef644de49": {
+            "id": "d51d6600-7298-44c4-aeaa-4ebef644de49",
+            "firstName": "David",
+            "lastName": "Tucker",
+            "email": "PDT123@gmail.com",
+            "department": "IT",
+            "mobileNumber": "+123123",
+            "age": 38
+        },
+        "5ac6cc04-3e43-436b-94ef-f5aacdb1f07e": {
+            "firstName": "Duck - Validator",
+            "lastName": "Tucker",
+            "email": "PDT123@gmail.com",
+            "department": "IT",
+            "mobileNumber": "123123",
+            "age": 51
+        },
+        "bb15c56a-c5ba-4b60-9d5c-823de11243b8": {
+            "firstName": "Duck - Validation",
+            "lastName": "Tucker",
+            "email": "PDT123@gmail.com",
+            "department": "IT",
+            "mobileNumber": "65583732",
+            "age": 74
+        },
+        "a25aa3a4-2e64-47ee-bb25-2e5ffe78d3f2": {
+            "firstName": "Duck - Validation",
+            "lastName": "Tucker",
+            "email": "PDT123@gmail.com",
+            "department": "IT",
+            "mobileNumber": "65583732",
+            "age": 74
+        },
+        "fcd08985-122f-471d-bc5b-450d4e56fd66": {
+            "firstName": "Duck - Validation",
+            "lastName": "Tucker",
+            "email": "PDT123@gmail.com",
+            "department": "IT",
+            "mobileNumber": "65583732",
+            "age": 74
+        },
+        "1af21a09-c704-4f6c-a106-dc79a6c189cc": {
+            "firstName": "Duck - Validation",
+            "lastName": "Tucker",
+            "email": "PDT123@gmail.com",
+            "department": "IT",
+            "mobileNumber": "33544344",
+            "age": 22
+        }
+    },
+    "users": {}
+}

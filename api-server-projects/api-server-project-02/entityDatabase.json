@@ -1,0 +1,12 @@
+{
+    "people": {
+        "id": "708606fe-62af-4240-a5da-35a5ce6f8fa0",
+        "firstName": "Duck - Validator",
+        "lastName": "Tucker",
+        "email": "PDT123@gmail.com",
+        "department": "IT",
+        "mobileNumber": "65583732",
+        "age": 74
+    },
+    "users": {}
+}
